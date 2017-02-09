@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.Controller">
+   <center>
+      <GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" vgap="10" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="7" textFill="#97252b" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="8" textFill="#97252b" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="9" textFill="#97252b" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="4" textFill="#97252b" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="5" textFill="#97252b" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="6" textFill="#97252b" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="1" textFill="#97252b" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="2" textFill="#97252b" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="3" textFill="#97252b" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#handlePinPress" style="-fx-background-color: #ffffff; -fx-border-color: #97252b; -fx-border-width: 4px;" text="0" textFill="#97252b" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="instructions" prefHeight="58.0" prefWidth="139.0" text="Instructions" GridPane.columnSpan="2">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#clearPIN" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #ffffff; -fx-border-color: #71b1c8; -fx-border-width: 4px;" text="Clear" textFill="#72b2c4" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#checkPIN" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #ffffff; -fx-border-color: #71b1c8; -fx-border-width: 4px;" text="Enter" textFill="#72b2c4" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                <font>
+                    <Font name="Segoe UI Bold" size="14.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#generatePIN" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: #ffffff; -fx-border-color: #71b1c8; -fx-border-width: 4px;" text="New PIN" textFill="#72b2c4" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                <font>
+                    <Font name="Segoe UI Bold" size="14.0" />
+                </font>
+            </Button>
+            <Label fx:id="text_output" text="Text output" GridPane.columnIndex="2" GridPane.columnSpan="3" />
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="640.0" style="-fx-background-color: #71B1C8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="70.0" layoutY="21.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="74.0" fitWidth="86.0" layoutX="583.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="480.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <BorderPane prefHeight="480.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="100.0" prefWidth="819.0" style="-fx-background-color: #71B1C8;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="505.0" layoutY="18.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-border-color: #97252B; -fx-border-width: 4px;" text="Home" textFill="#97252b">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
