@@ -46,5 +46,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Intellij files
-./idea
+
+# Individually Compiled Srcs
+/src/kiosk/kiosk/*.class
