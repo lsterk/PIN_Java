@@ -13,11 +13,14 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.ConnectException;
+import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 
 
-public class APIController {
+public class APIController implements Initializable{
     static final String API_SERVER_NAME = "localhost";  // address of API server (convert to hostname or IP later)
     static final int API_SERVER_PORT = 5000;  // port on which the API server is listening for requests
     static final String API_TEST_ADDRESS = "/test";  // path for testing connection status
@@ -92,6 +95,15 @@ public class APIController {
 
         return true;
     }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb){
+        // empty
+
+        // include some code to do the test?
+        // color the button according to the test results?
+    }
+
 
     @FXML
     private void handleTestPress(ActionEvent event){
